@@ -245,6 +245,7 @@
     <Compile Include="Controllers\CuratedFeedsController.cs" />
     <Compile Include="Controllers\CuratedPackagesController.cs" />
     <Compile Include="Controllers\PackageFilesController.cs" />
+    <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="CuratedFeedsController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -504,6 +505,9 @@
     <Compile Include="SharedController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="StatisticsController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
     <Compile Include="T4MVC.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -522,6 +526,8 @@
     <Compile Include="ViewModels\PackageOwnerConfirmationModel.cs" />
     <Compile Include="ViewModels\PackagePart\PackageItem.cs" />
     <Compile Include="ViewModels\PackagePart\PathToTreeConverter.cs" />
+    <Compile Include="ViewModels\StatisticsPackagesItemViewModel.cs" />
+    <Compile Include="ViewModels\StatisticsPackagesViewModel.cs" />
     <Compile Include="ViewModels\ResendConfirmationEmailViewModel.cs" />
     <Compile Include="App_Start\AuthenticationModule.cs" />
     <Compile Include="App_Start\AppActivator.cs" />
@@ -1071,6 +1077,10 @@
     <Content Include="Web.ForbiddenHandlers.config" />
     <Content Include="Views\PackageFiles\Contents.cshtml" />
     <Content Include="Views\PackageFiles\PackageTooBig.cshtml" />
+    <Content Include="Views\Statistics\Index.cshtml" />
+    <Content Include="Views\Statistics\Packages.cshtml" />
+    <Content Include="Views\Statistics\PackageVersions.cshtml" />
+    <Content Include="Views\Statistics\PackageDownloadsByVersion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DynamicData\CustomPages\" />
